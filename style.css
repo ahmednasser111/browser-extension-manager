@@ -66,8 +66,8 @@ button{
     gap: 10px;
 }
 .all{
-    background-color: #F45B54;
-    color: black;
+    background-color: #2F354B;
+    color: white;
     height: 41px;
     width: 60px;
     border: solid 1px #3A4155;
@@ -76,8 +76,8 @@ button{
     font-size: 16px;
     transition: 0.3s;
 }
-.all:hover{
-    background-color: rgb(247, 136, 130);
+.all:hover{    
+    background-color: #545969;
 }
 .active{
     background-color: #2F354B;
@@ -104,6 +104,13 @@ button{
 }
 .inactive:hover{
     background-color: #545969;
+}
+
+.clicked{
+    background-color: #F45B54;
+}
+.clicked:hover{
+    background-color: rgb(247, 136, 130);
 }
 
 .container{

@@ -80,6 +80,22 @@ function updateDisplay(filter) {
   });
 }
 
-all.addEventListener('click', () => updateDisplay('all'));
-active.addEventListener('click', () => updateDisplay('active'));
-inactive.addEventListener('click', () => updateDisplay('inactive'));
+all.addEventListener("click", () => {
+	updateDisplay("all");
+	all.classList.add("clicked");
+	active.classList.remove("clicked");
+	inactive.classList.remove("clicked");
+});
+active.addEventListener("click", () => {
+	updateDisplay("active");
+	active.classList.add("clicked");
+	all.classList.remove("clicked");
+	inactive.classList.remove("clicked");
+});
+inactive.addEventListener("click", () => {
+	updateDisplay("inactive");
+	inactive.classList.add("clicked");
+	all.classList.remove("clicked");
+	active.classList.remove("clicked");
+});
+
